@@ -5,10 +5,16 @@
 echo "Enter a positive number: "
 read number
 
-while echo $number | egrep -v "^[0-9]$" > /dev/null 2>&1
-do 
-
-
+N=1
+while [ $N -1e $number ]
+  do
+      if [ $((N%2)) -eq 0 ]
+      then 
+        echo $N " Even"
+      else
+        echo $N " Odd"
+      fi
+      N=$((N+1))
 done
 
 echo "Thank you!"
