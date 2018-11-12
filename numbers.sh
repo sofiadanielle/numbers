@@ -6,7 +6,7 @@ echo "Enter a positive number: "
 read number
 
 N=1
-while [ $N -1e $number ]
+while [ $N -le $number ]
   do
       if [ $((N%2)) -eq 0 ]
       then 
